@@ -61,8 +61,6 @@ if (*Var && *v3
 }
 ```
 
-![IDA: credential check](pics/ida_credential_check.png)
-
 #### 3.1.2 Token Generation (Address `0x415E58`)
 
 ```c
