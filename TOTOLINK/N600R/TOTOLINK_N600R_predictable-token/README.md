@@ -1,4 +1,4 @@
-# Predictable Session Token in TOTOLINK N600R V4.3.0cu.7866
+# CVE-2026-82555 Predictable Session Token in TOTOLINK N600R V4.3.0cu.7866
 
 ## Summary
 
@@ -52,15 +52,15 @@ pip install -r requirements.txt
 python poc.py --target 192.168.0.1
 ```
 
-Search space is approximately 86,400 candidates per 24-hour window. A valid session can be brute-forced in minutes.
+A valid session can be guessed in minutes.
 
 ## Timeline
 
 | Date | Event |
 |------|-------|
-| 2025-07-15 | Vulnerability discovered |
-| | Submitted to VulDB |
-| | CVE assigned |
+| 2026-07-15 | Vulnerability discovered |
+| 2026-07-15 | Submitted to VulDB |
+| 2026-08-30 | CVE assigned |
 
 ## Directory Structure
 
