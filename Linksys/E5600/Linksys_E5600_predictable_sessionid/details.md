@@ -48,11 +48,11 @@ Set-Cookie: HSESSIONID=<sessionid>; path=/; HttpOnly; SameSite=Strict
 
 ```bash
 pip install requests
-python poc.py --target http://192.168.1.1 --victim-ip 192.168.1.2
+python exp.py --target http://192.168.1.1 --victim-ip 192.168.1.2
 ```
 
 - Brute-forces the ≤600-second session window (one candidate per second).
-- Known login time → exact match in a single request (`--login-time <epoch>`).
+- Known login time → exact match in a single request (`--login-time <eexph>`).
 - Success: `/system-status.html` returns the full admin page (7702 bytes) instead of the 55-byte unauthenticated redirect.
 - Verified cross-IP: attacker at a different source IP hijacks the admin session.
 
@@ -67,5 +67,5 @@ python poc.py --target http://192.168.1.1 --victim-ip 192.168.1.2
 | Date | Event |
 |------|-------|
 | 2026-08-14 | Vulnerability identified (static analysis) |
-| 2026-08-27 | Reproduced and validated in emulated firmware; PoC written |
+| 2026-08-27 | Reproduced and validated in emulated firmware; exp written |
 | 2026-08-27 | Disclosed / CVE requested |
