@@ -135,6 +135,10 @@ A stronger demonstration — the attacker never sees the `Set-Cookie` value — 
 | Access with the predicted cookie | `/wireless/wireless_basic.shtml` → **HTTP 200** (413,297 bytes); `/admin/management.shtml` → **HTTP 200** (19,378 bytes) |
 | Access without the cookie | HTTP **307** redirect to `/redirect.shtml?url=/login.shtml` |
 
+
+https://github.com/user-attachments/assets/d1b81af1-aead-4f79-8b11-54d8f239bc29
+
+
 ## Remediation
 
 1. Generate session IDs with a CSPRNG (`getrandom()` / `/dev/urandom`), at least 128 bits, and never derive them from time or any other predictable value.
