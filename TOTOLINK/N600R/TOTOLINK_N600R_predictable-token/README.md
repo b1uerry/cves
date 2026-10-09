@@ -49,8 +49,10 @@ For detailed technical analysis, see [details.md](details.md).
 
 ```bash
 pip install -r requirements.txt
-python poc.py --target 192.168.0.1
+python exp.py
 ```
+
+The target is hardcoded to `http://192.168.0.1` at the top of `exp.py`; edit it if your device is on another address.
 
 A valid session can be guessed in minutes.
 
@@ -67,7 +69,7 @@ A valid session can be guessed in minutes.
 ```
 ├── README.md           # This file
 ├── details.md          # Detailed technical analysis with IDA evidence
-├── poc.py              # Proof-of-concept exploit
+├── exp.py              # Proof-of-concept exploit
 ├── requirements.txt    # Python dependencies
 ├── pics/               # Screenshots and diagrams
 ├── binaries/           # Vulnerable binary (cstecgi.cgi)
