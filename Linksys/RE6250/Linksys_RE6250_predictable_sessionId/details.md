@@ -97,11 +97,9 @@ Consequently, the effective entropy of the credential is **the uncertainty of th
 
 The attack requires no credentials and no user interaction; a single login-time estimate is sufficient.
 
-## CVSS 3.1
+## CVSS 4.0
 
-**8.8 (HIGH)** — `AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H`
-
-*(The management interface is normally reachable only from the adjacent network. If the web UI is exposed beyond the LAN, the vector becomes `AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H` = **9.8 CRITICAL**.)*
+6.3 (CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:P)
 
 ## CWE
 
@@ -155,3 +153,4 @@ https://github.com/user-attachments/assets/d1b81af1-aead-4f79-8b11-54d8f239bc29
 | 2026-10-08 | Vulnerability identified by static analysis of the firmware image |
 | 2026-10-09 | Reproduced and validated on the vendor firmware under emulation; PoC written and blind attack confirmed |
 | 2026-10-09 | CVE ID requested |
+| 2026-10-22 | CVE ID assigned (CVE-2026-114576) |
