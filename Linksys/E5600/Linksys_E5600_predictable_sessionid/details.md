@@ -1,4 +1,4 @@
-# Linksys E5600 — Predictable Admin Session ID → Admin Session Hijack
+# CVE-2026-116993 Linksys E5600 — Predictable Admin Session ID → Admin Session Hijack
 
 ## Summary
 
@@ -68,3 +68,4 @@ python exp.py --target http://192.168.1.1 --victim-ip 192.168.1.2
 |------|-------|
 | 2026-08-14 | Vulnerability identified (static analysis) |
 | 2026-08-27 | Reproduced and validated in emulated firmware; exp written |
+| 2026-10-28 | CVE ID assigned |
